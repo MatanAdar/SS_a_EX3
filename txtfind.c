@@ -188,11 +188,11 @@ int main()
 
     char first_word[WORD];
     getword(first_word);
-    printf("The word that we need to check on is: %s\n", first_word);
+    //printf("The word that we need to check on is: %s\n", first_word);
 
     char check_what_func[LINE];
     get_line(check_what_func);
-    printf("The func is: %s\n", check_what_func);
+    //printf("The func is: %s\n", check_what_func);
 
     char input[LINE];
     get_line(input);
