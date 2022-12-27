@@ -208,7 +208,6 @@ int main()
     {
         print_similar_words(first_word);
     }
-    printf("\n");
 
     return 0;
 }
