@@ -52,7 +52,7 @@ int main()
     {
         printf("%d,",*(arr+i));
     }
-    printf("%d",*(arr+SIZE-1));
+    printf("%d ",*(arr+SIZE-1));
     //printf("\n");
 
     return 0;
