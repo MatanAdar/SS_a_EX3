@@ -48,11 +48,11 @@ int main()
 
     insertion_sort(arr,SIZE);
     //printf("the array after sorted:\n");
-    for(int i=0;i<SIZE;i++)
+    for(int i=0;i<SIZE-1;i++)
     {
         printf("%d,",*(arr+i));
     }
-    printf(",");
+    printf("%d",*(arr+SIZE-1));
     //printf("\n");
 
     return 0;
