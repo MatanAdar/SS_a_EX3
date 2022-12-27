@@ -202,7 +202,6 @@ int main()
     if (check_what_func[0] == 'a')
     {
         print_lines(first_word);
-        printf("\n");
     }
     else if (check_what_func[0] == 'b')
     {
