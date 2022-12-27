@@ -34,20 +34,11 @@ int main()
 
     for(int i=0;i<SIZE;i++)
     {   
-        //printf("please enter a int for the arr:\n");
         scanf("%d,",arr+i);
     }
-    //printf("\n");
-    // printf("the array before sorted:\n");
-    //  for(int i=0;i<10;i++)
-    // {   
-    //     printf("%d,",*(arr+i));
-    // }
-    // printf("\n");
-
 
     insertion_sort(arr,SIZE);
-    //printf("the array after sorted:\n");
+
     for(int i=0;i<SIZE-1;i++)
     {
         printf("%d,",*(arr+i));
