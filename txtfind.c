@@ -14,7 +14,7 @@ int get_line(char s[])
     {
         scanf("%c", &s[i]);
         count++;
-        if (s[i] == '\n')
+        if (s[i] == '\n'||s[i]=='\r')
         {
             s[i] = '\0';
             break;
