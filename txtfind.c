@@ -92,18 +92,6 @@ int substring(char *str1, char *str2)
 
     return 0;
 
-    // while(i<strlen(str1) && j<strlen(str2)) //checking if str2 in str1 (we know that len of str2 is lower then str1)
-    // {
-    //     while( )
-    //     {
-    //         if(str1[i]==str2[j])  //if they have the same char we moving the index togheter
-    //         {
-    //             i++;
-    //             j++;
-    //         }
-    //     }
-    //     j=0;
-    // }
 }
 
 int similar(char *s, char *t, int n)
@@ -147,7 +135,7 @@ int similar(char *s, char *t, int n)
 void print_lines(char *str)
 {
 
-    char check[LINE];
+    char check[LINE]={0};
     int i = 0;
     while (i < Line_in_txt)
     {
@@ -162,14 +150,10 @@ void print_lines(char *str)
 
 void print_similar_words(char *str)
 {
-    char word[WORD];
-    //int len=getword(word)
+    char word[WORD]={0};
     int i = 0;
-    while (i<Line_in_txt)//word[len]!=EOF)
+    while (i<Line_in_txt)
     {
-        //printf("word=%s, length=%ld  \n", word, strlen(word));
-        //printf("%s\n",word);
-
         if (similar(word, str, 1) == 1 || similar(word, str, 0) == 1)
         {
             printf("%s\n", word);
