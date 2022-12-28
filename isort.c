@@ -3,7 +3,7 @@
 
 
 void shift_element(int *arr, int i)
-{
+{   
     for(int j=i; j>0 ; j--)  //move one right from the last one i times
     {
         *(arr+j)=*(arr+(j-1));  //put the val of the one before him in to him
