@@ -12,12 +12,16 @@ int get_line(char s[])
 
     for (int i = 0; i < LINE; i++)
     {
-        scanf("%c", &s[i]);
-        count++;
-        if (s[i] == '\n'||s[i]=='\r')
-        {
-            s[i] = '\0';
+        if(scanf("%c", &s[i])<1){
             break;
+        }
+        else{
+            count++;
+            if (s[i] == '\n'||s[i]=='\r')
+            {
+                s[i] = '\0';
+                break;
+            }
         }
     }
     return count;
