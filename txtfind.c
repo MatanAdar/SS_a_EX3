@@ -141,9 +141,15 @@ void print_lines(char *str)
     {
         i++;
         get_line(check);
-        if (substring(check, str) == 1)
+        if(feof(stdin))
         {
-            printf("%s\n", check);
+            break;
+        }
+        else{
+            if (substring(check, str) == 1)
+            {
+                printf("%s\n", check);
+            }
         }
     }
 }
