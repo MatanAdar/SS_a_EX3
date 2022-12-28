@@ -160,12 +160,19 @@ void print_similar_words(char *str)
     int i = 0;
     while (i<Line_in_txt)
     {
-        if (similar(word, str, 1) == 1 || similar(word, str, 0) == 1)
-        {
-            printf("%s\n", word);
-        }
         getword(word);
-        i++;
+        if(feof(stdin))
+        {
+            break;
+        }
+        else
+        {
+            if (similar(word, str, 1) == 1 || similar(word, str, 0) == 1)
+            {
+                printf("%s\n", word);
+            }
+            i++;
+        }
     }
 }
 
