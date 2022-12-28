@@ -7,6 +7,10 @@
 
 int get_line(char s[])
 {
+    for (int i = 0; i < LINE; i++)
+    {
+        s[i] = (char) 0;
+    }
 
     int count = 0;
 
@@ -38,15 +42,19 @@ int getword(char w[])
    
     for (int i = 0; i < WORD; i++)
     {
-        scanf("%c", &w[i]);
-        if (w[i] == '\n' || w[i] == '\t' || w[i] == ' '||w[i]=='\r')
-        {
-            w[i] = '\0';
+        if(scanf("%c", &w[i])<1){
             break;
         }
-        else
-        {
-            count++;
+        else{
+            if (w[i] == '\n' || w[i] == '\t' || w[i] == ' '||w[i]=='\r')
+            {
+                w[i] = '\0';
+                break;
+            }
+            else
+            {
+                count++;
+            }
         }
     }
     
