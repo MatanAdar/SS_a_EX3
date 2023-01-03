@@ -3,7 +3,7 @@
 
 #define LINE 256
 #define WORD 30
-#define LINE_IN_TXT 250
+#define LINES_IN_TXT 250
 
 int get_line(char s[])
 {
@@ -137,7 +137,7 @@ void print_lines(char *str)
 
     char check[LINE]={0};
     int i = 0;
-    while (i < LINE_IN_TXT)
+    while (i < LINES_IN_TXT)
     {
         i++;
         get_line(check);
@@ -158,7 +158,7 @@ void print_similar_words(char *str)
 {
     char word[WORD]={0};
     int i = 0;
-    while (i<LINE_IN_TXT)
+    while (i<LINES_IN_TXT)
     {
         getword(word);
         if(feof(stdin))
