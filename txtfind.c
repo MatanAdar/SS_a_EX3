@@ -3,7 +3,7 @@
 
 #define LINE 256
 #define WORD 30
-#define Line_in_txt 250
+#define LINE_IN_TXT 250
 
 int get_line(char s[])
 {
@@ -137,7 +137,7 @@ void print_lines(char *str)
 
     char check[LINE]={0};
     int i = 0;
-    while (i < Line_in_txt)
+    while (i < LINE_IN_TXT)
     {
         i++;
         get_line(check);
@@ -158,7 +158,7 @@ void print_similar_words(char *str)
 {
     char word[WORD]={0};
     int i = 0;
-    while (i<Line_in_txt)
+    while (i<LINE_IN_TXT)
     {
         getword(word);
         if(feof(stdin))
@@ -178,35 +178,15 @@ void print_similar_words(char *str)
 
 int main()
 {
-    // char str1[]= "aagabahj";
-    // char str2[] ="aba";
-
-    // printf("%d\n",substring(str1,str2));
-
-    // char s[]="hello";
-    // char t[]="elo";
-    // printf("%d\n",similar(s,t,2));
-
-    // for (int i = 0; i < 50; i++)
-    // {
-    //     char first_word[WORD];
-    //     getword(first_word);
-    //     printf("%s\n", first_word);
-    //     /* code */
-    // }
 
     char first_word[WORD];
     getword(first_word);
-    //printf("The word that we need to check on is: %s\n", first_word);
 
     char check_what_func[LINE];
     get_line(check_what_func);
-    //printf("The func is: %s\n", check_what_func);
 
-    char input[LINE];
-    get_line(input);
-
-    // char check_what_func = first_line_func[strlen(first_line_func) - 1];
+    char empty_line[LINE];
+    get_line(empty_line);
 
     if (check_what_func[0] == 'a')
     {
